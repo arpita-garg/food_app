@@ -25,7 +25,7 @@ export default function LayoutHomeCard(props) {
         // console.log("fjhsd",ele.Rid);
         // console.log("dhfuk",item.Rid)
         if(item.Rid === ele.Rid){
-          navigate("/dominos", {state: {ele:ele.Rid}})
+          navigate("/dominos", {state: {ele:ele}})
         }
       })
          
