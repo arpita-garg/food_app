@@ -7,37 +7,37 @@ import katani from "../Assets/katani.avif";
 
 let Restaurants = [
   {
-    id: "01",
+    Rid: "01",
     photo: dominos,
     name: "Domino's Pizza",
     order: "Order Now",
   },
   {
-    id: "02",
+    Rid: "02",
     photo: subway,
     name: "Subway",
     order: "Order Now",
   },
   {
-    id: "03",
+    Rid: "03",
     photo: baskinRobins,
     name: "Baskins-Robins",
     order: "Order Now",
   },
   {
-    id: "04",
+    Rid: "04",
     photo:  rollsMania,
     name: "Rolls Mania",
     order: "Order Now",
   },
   {
-    id: "05",
+    Rid: "05",
     photo: sweets,
     name: "Guru Nank Sweets",
     order: "Order Now",
   },
   {
-    id: "06",
+    Rid: "06",
     photo: katani,
     name: "Katani Sweets",
     order: "Order Now",
