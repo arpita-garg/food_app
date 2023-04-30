@@ -129,11 +129,11 @@ export const StyledDominos = styled.div`
   }
 
   .restaurant-card:hover {
-  /* visibility: visible; */
-  height: 525px;
-  .card-description {
-    visibility: visible;
-  }
+    /* visibility: visible; */
+    height: 525px;
+    .card-description {
+      visibility: visible;
+    }
   }
 
   .restaurant-img {
@@ -161,36 +161,34 @@ export const StyledDominos = styled.div`
   .rating-card {
     text-align: center;
     background: #24963f;
-}
+  }
 
-.timings {
+  .timings {
     margin-top: 10px;
-}
+  }
 
-.restaurant-name{
-  margin-top: 20px;
-}
+  .restaurant-name {
+    margin-top: 20px;
+  }
 
-.tagline {
+  .tagline {
     margin-top: 10px;
-}
+  }
 
-.restaurant-variety {
+  .restaurant-variety {
     text-align: left;
     margin-top: 15px;
-}
+  }
 
-.order-btn {
-  margin-top: 15px;
-}
+  .order-btn {
+    margin-top: 15px;
+  }
 
-button.orderNow {
+  button.orderNow {
     background: #fa642d;
     color: white;
     border: 1px solid transparent;
     padding: 3px;
     border-radius: 5px;
-}
-
+  }
 `;
-

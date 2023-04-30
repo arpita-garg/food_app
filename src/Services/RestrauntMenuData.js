@@ -3,7 +3,7 @@ import dominoRestaurant from "../Assets/dominos-restraunt.jpg";
 import subwayRestaurant from "../Assets/subwayRestaurant.jpg";
 import brRestaurant from "../Assets/brRestaurant.jpg";
 import guruSweets from "../Assets/guruSweets.jpg";
-import kataniRestaurant from "../Assets/kataniRestraunt.avif"
+import kataniRestaurant from "../Assets/kataniRestraunt.avif";
 
 let Menu = [
   {

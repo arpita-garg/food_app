@@ -42,7 +42,7 @@ export const StyledLayout = styled.div`
     padding: 20px;
     font-size: 30px;
     color: rgba(255, 68, 0, 0.822);
-    text-align: center ;
+    text-align: center;
   }
 
   span.top-restraunt-span {

@@ -26,7 +26,7 @@ let Restaurants = [
   },
   {
     Rid: "04",
-    photo:  rollsMania,
+    photo: rollsMania,
     name: "Rolls Mania",
     slogan: "Goodness rolled with love",
   },

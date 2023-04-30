@@ -3,7 +3,7 @@ import { StyledLayout } from "../Style/LayoutStyle";
 import LayoutHomeCard from "../Cards/LayoutHomeCard";
 import Restaurants from "../Services/RestaurantsData";
 import LayoutNavbar from "../Components/LayoutNavbar";
-import footerBurger from "../Assets/footerBurgerjpg.jpg"
+import footerBurger from "../Assets/footerBurgerjpg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -102,9 +102,9 @@ export default function LayoutHome() {
               <div className="footer-last">
                 <h1 className="footer-lastLine">We happy to Feed you! ;) </h1>
                 <div className="social-media-icons">
-                <FontAwesomeIcon icon={faInstagramSquare} size="2xl" />
-                <FontAwesomeIcon icon={faFacebook} size="2xl" />
-                <FontAwesomeIcon icon={faTwitter} size="2xl" />
+                  <FontAwesomeIcon icon={faInstagramSquare} size="2xl" />
+                  <FontAwesomeIcon icon={faFacebook} size="2xl" />
+                  <FontAwesomeIcon icon={faTwitter} size="2xl" />
                 </div>
               </div>
             </div>

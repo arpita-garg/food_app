@@ -8,6 +8,8 @@ import { faTruck } from "@fortawesome/free-solid-svg-icons";
 import Price from "../Services/RestaurantMenuPriceData";
 
 export default function Dominos(props) {
+  // const {item} = props.match;
+  console.log("Props.match", props.match);
   const [priceMenu, setPriceMenu] = useState([]);
   useEffect(() => {
     setPriceMenu(Price);
@@ -15,17 +17,11 @@ export default function Dominos(props) {
   const navigate = useNavigate();
 
   const location = useLocation();
-  console.log(location);
-  let hotel = location.state.ele.menu;
-  console.log("djh", hotel);
-  console.log("Doosra", priceMenu);
+  console.log("Location", location);
+  let menu = location.state.ele.menu;
 
-  let hotelMap = hotel.map((order) => {
+  let hotelMap = menu.map((order) => {
     // console.log("ord00er", order.mid);
-    // console.log("price",price);
-    function gotoPrice() {
-      console.log("Marza Jake");
-    }
     priceMenu.map((cost) => {
       // console.log("costmenu",cost.menu);
 
@@ -47,7 +43,11 @@ export default function Dominos(props) {
       </>
     );
   });
-  
+
+  function handleOrderNowClick() {
+    navigate("/dominos/details", { state: { menu: menu } });
+  }
+
   return (
     <>
       <div className="container">
@@ -137,8 +137,18 @@ export default function Dominos(props) {
                     </div>
                     <div className="restaurant-variety">{hotelMap}</div>
                     <div className="order-btn">
-                      <button className="orderNow" onClick={hotelMap.gotoPrice}>
-                        Order Now 
+                      <button
+                        className="orderNow"
+                        onClick={() => {
+                          // <div>
+                          //   {location.state.ele.menu.map((element) => {
+                          //     return <div>{element} abc</div>;
+                          //   })}
+                          // </div>;
+                          handleOrderNowClick();
+                        }}
+                      >
+                        Order Now
                       </button>
                     </div>
                   </div>
