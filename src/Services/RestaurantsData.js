@@ -10,37 +10,37 @@ let Restaurants = [
     Rid: "01",
     photo: dominos,
     name: "Domino's Pizza",
-    order: "Order Now",
+    slogan: "Pizza is always the answer",
   },
   {
     Rid: "02",
     photo: subway,
     name: "Subway",
-    order: "Order Now",
+    slogan: "No Better Burger Than This",
   },
   {
     Rid: "03",
     photo: baskinRobins,
     name: "Baskins-Robins",
-    order: "Order Now",
+    slogan: "Fueled by ice-cream",
   },
   {
     Rid: "04",
     photo:  rollsMania,
     name: "Rolls Mania",
-    order: "Order Now",
+    slogan: "Goodness rolled with love",
   },
   {
     Rid: "05",
     photo: sweets,
     name: "Guru Nank Sweets",
-    order: "Order Now",
+    slogan: "Always save room from dessert",
   },
   {
     Rid: "06",
     photo: katani,
     name: "Katani Sweets",
-    order: "Order Now",
+    slogan: "You know you want it",
   },
 ];
 

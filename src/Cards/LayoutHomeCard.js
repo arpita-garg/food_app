@@ -1,37 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { StyledLayoutCard } from "../Style/LayoutStyle";
 import { NavLink, useNavigate } from "react-router-dom";
-import Menu from "../Services/RestrauntMenuData"
+import Menu from "../Services/RestrauntMenuData";
 
 export default function LayoutHomeCard(props) {
-  const[menuData, setMenuData] = useState([]);
-  useEffect(()=>{
-    setMenuData(Menu)
-  },[])
- 
-  
+  const [menuData, setMenuData] = useState([]);
+  useEffect(() => {
+    setMenuData(Menu);
+  }, []);
+
   // console.log("menudata",menuData[0].Rid);
 
   const restaurantData = props.restaurantData;
   // console.log("restrauntData", JSON.stringify(restaurantData));
   const navigate = useNavigate();
- 
 
   const restaurantMap = restaurantData.map((item) => {
     const gotoRestaurant = () => {
       // console.log("fdgd",menuData);
-      menuData.map((ele)=>{
+      menuData.map((ele) => {
         // console.log("jdh",ele)
         // console.log("fjhsd",ele.Rid);
         // console.log("dhfuk",item.Rid)
-        if(item.Rid === ele.Rid){
-          navigate("/dominos", {state: {ele:ele}})
+        if (item.Rid === ele.Rid) {
+          navigate("/dominos", { state: { ele: ele } });
         }
-      })
-         
-       };
+      });
+    };
     // console.log("dfn",item
-    
+
     // .Rid)
     return (
       <>
@@ -44,11 +41,10 @@ export default function LayoutHomeCard(props) {
           <div className="card-content">
             <div className="restaurant-name">
               <div className="name">
-                <p
-                  onClick={gotoRestaurant}
-                >
+                <p onClick={gotoRestaurant}>
                   <NavLink>{item.name} </NavLink>
                 </p>
+                <p className="tagLine">{item.slogan}</p>
               </div>
               {/* <div className="order-now">
                 <h4>
